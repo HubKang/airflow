@@ -7,12 +7,12 @@ from airflow.operators.empty import EmptyOperator
 
 # DAG 설정
 with DAG(
-    dag_id="example_bash_operator",
+    dag_id="dags_bash_operator",
     schedule="0 0 * * *",
-    start_date=pendulum.datetime(2024, 9, 20, tz="Asia/Seoul"),
+    start_date=pendulum.datetime(2024, 9, 1, tz="Asia/Seoul"),
     catchup=False,
     dagrun_timeout=datetime.timedelta(minutes=60),
-    tags=["example", "example2"],
+    tags=["example", "kang"],
     params={"example_key": "example_value"},
 ) as dag:
 
