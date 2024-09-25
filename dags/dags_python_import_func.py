@@ -8,7 +8,7 @@ from common.common_func import get_sftp               #airflow 가 인식하는 
 # DAG 설정
 with DAG(
     dag_id="dags_python_import_func",
-    schedule="10 6 * * *",s
+    schedule="10 6 * * *",
     start_date=pendulum.datetime(2024, 9, 23, tz="Asia/Seoul"),
     catchup=False,
     dagrun_timeout=datetime.timedelta(minutes=60),
