@@ -7,7 +7,7 @@ import random
 # DAG 설정
 with DAG(
     dag_id="dags_python_operator",
-    schedule="10 6 * * *",s
+    schedule="10 6 * * *",
     start_date=pendulum.datetime(2024, 9, 23, tz="Asia/Seoul"),
     catchup=False,
     dagrun_timeout=datetime.timedelta(minutes=60),
